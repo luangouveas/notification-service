@@ -56,7 +56,7 @@ export class PrismaNotificationRepository implements NotificationsRepository {
       where: {
         id: raw.data.id,
       },
-      data: raw,
+      data: raw.data,
     });
   }
 }
